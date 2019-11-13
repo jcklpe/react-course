@@ -1,6 +1,4 @@
 import React from "react";
-//import PropTypes from "prop-types";
-//import { Test } from './Header.styles';
 
 const Header = props => (
   <header className="top">

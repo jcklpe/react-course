@@ -1,15 +1,15 @@
 import React from "react";
-import PropTypes from "prop-types";
-//import { Test } from './Inventory.styles';
+import AddFishForm from "../AddFishForm/AddFishForm";
 
-const Inventory = props => <div className="InventoryWrapper">Inventory</div>;
-
-Inventory.propTypes = {
-  // bla: PropTypes.string,
-};
-
-Inventory.defaultProps = {
-  // bla: 'test',
-};
+class Inventory extends React.Component {
+  render() {
+    return (
+      <div className="InventoryWrapper">
+        <h2>Inventory</h2>
+        <AddFishForm addFish={this.props.addFish} />
+      </div>
+    );
+  }
+}
 
 export default Inventory;
